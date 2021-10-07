@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLOG</title>
+  <script defer src="https://kit.fontawesome.com/b6d1d012fa.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="./css/pageStyle.css">
+</head>
+<body class="bg-gray-900 ">
+  <main class="max-w-full relative">
+    <nav class="w-full bg-transparent border-b-2 border-red-500 shadow dark:bg-gray-800">
+      <div style="max-width: 95%;" class="navContainer h-full mx-auto flex items-center">
+        <div id="allmenuDiv" class="allmenuDiv flex-1 lg:flex-1 ">
+          <div id="menu" class=" ">
+            <button id="menuBtn" type="button" class="
+                lg:hidden
+                text-gray-500
+                dark:text-gray-200
+                hover:text-gray-600
+                dark:hover:text-gray-400
+                focus:outline-none focus:text-gray-600
+                dark:focus:text-gray-400
+              " aria-label="toggle menu">
+              <i id="openMenu" class=" fas fa-bars"></i>
+              <i id="closeMenu" class=" fas fa-times-circle"></i>
+            </button>
+            <ul id="allMenus" class="flex flex-col hidden lg:flex lg:flex-row lg:items-center">
+              <li class="p-2 lg:mt-0 lg:mx-1"><a href="#">Blog</a></li>
+              <li class="p-2 lg:mt-0 lg:mx-1"><a href="./contact3.html">Contact</a></li>
+              <li class="p-2 lg:mt-0 lg:mx-1"><a href="#">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="title flex-1 mx-auto text-center lg:flex-1 ">
+          <a class="
+            text-2xl
+            font-bold
+          text-gray-100
+            dark:text-white
+            sm:text-3xl
+            hover:text-gray-200
+            dark:hover:text-gray-300
+            " href="#">BLOG</a>
+        </div>
+        <div id="socialAndSearchBar" class="flex-1 flex justify-end items-center lg:flex lg:items-center lg:flex-1 lg:justify-end lg:ml-auto lg:mt-0">
+          <div id="navSearchDiv" class="navSearch rounded-xl w-48 h-8 mx-1 flex items-center justify-center">
+            <input type="text" placeholder="search" id="navSearch" class="w-0 h-full mr-auto">
+            <div id="searchIconDiv" class="searchIconDiv h-full grid place-items-center">
+              <i
+              id="searchIcon" class="fas fa-search"></i>
+              <i id="searchCross" class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="allSocialLinks hidden lg:flex lg:items-center lg:justify-center">
+            <a href="#" class="grid place-items-center
+                mx-1
+                w-8
+                h-8
+                text-gray-600
+                dark:text-gray-300
+                hover:text-gray-500
+                dark:hover:text-gray-300
+              " aria-label="twitter">
+            <i class="w-full h-full grid place-items-center fab fa-twitter fill-current"></i>
+          </a>
+          <a href="#" class="grid place-items-center
+                w-8
+                h-8
+                mx-1
+                text-gray-600
+                dark:text-gray-300
+                hover:text-gray-500
+                dark:hover:text-gray-300
+              " aria-label="Facebook">
+            <i class="grid place-items-center fab fa-facebook w-full h-full fill-current"></i>
+          </a>
+          <a href="#" class="grid place-items-center
+                w-8
+                mx-1
+                text-gray-600
+                dark:text-gray-300
+                hover:text-gray-500
+                dark:hover:text-gray-300
+              " aria-label="Github">
+            <i class="grid place-items-center fab fa-github w-full h-full fill-current"></i>
+          </a>
+          </div>
+        </div>
+        <!-- <div class="socialLinks flex-1 border-red-400 border">        
+        </div> -->
+      </div>
+    </nav>
+    <header class="bg-gray-900  relative">
+      <div class="container px-6 py-16 mx-auto">
+        <div class="items-center flex flex-wrap-reverse lg:flex">
+          <div class="w-full lg:w-1/2">
+            <div class="lg:max-w-lg">
+              <h1 class="text-2xl font-semibold text-white lg:text-3xl">
+                Subscribe To The <span class="text-red-500">Newsletter</span>
+              </h1>
+              <p class="mt-4 text-gray-300">
+                be the first to knows when our
+                <span class="font-medium text-red-500">BLOG</span> is live
+              </p>
+              <div class="flex flex-col mt-8 space-y-3 lg:space-y-0 lg:flex-row">
+                <input id="email" type="email" class="
+                      px-4
+                      py-2
+                      border border-gray-300
+                      rounded-lg
+                      bg-gray-800
+                      text-gray-300
+                      focus:border-red-500
+                      focus:outline-none
+                      focus:ring
+                      focus:ring-red-300
+                    " placeholder="Email Address" />
+                <button class="
+                      w-full
+                      px-4
+                      py-2
+                      text-sm
+                      font-medium
+                      tracking-wide
+                      text-white
+                      capitalize
+                      transition-colors
+                      duration-200
+                      transform
+                      bg-red-500
+                      rounded-lg
+                      lg:w-auto lg:mx-4
+                      hover:bg-red-400
+                      focus:outline-none
+                    ">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="
+                flex
+                items-center
+                justify-center
+                w-full
+                mt-6
+                mb-6
+                lg:mt-0 lg:w-1/2
+              ">
+            <img class="w-full h-full max-w-md" src="../Images/Newletter.png" alt="Section image" />
+          </div>
+        </div>
+      </div>
+    </header>
+  </main>
+  <section class="w-full">
+    <div class="mainContainer mx-auto mt-16 flex justify-center align-middle">
+      <div id="subSection1" class="">
+        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+          <div class="container px-5 pt-8 pb-24 mx-auto">
+            <div class="-my-8 divide-y-2 divide-gray-800">
+              <div class="blogPost border-gray-800 border-b-2 py-8 flex flex-wrap md:flex-nowrap md:flex-col">
+                <div class="md:w-full md:mb-4 mb-4 flex-shrink-0 flex">
+                  <span class="mt-1 text-gray-500 text-sm">12 Jun 2019&nbsp; |</span>
+                  <span class="mt-1 text-gray-400 text-sm">&nbsp;&nbsp;By Author &nbsp;|</span>
+                  <span class="font-medium title-font text-white">&nbsp;&nbsp;CATEGORY&nbsp; |</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-white title-font mb-2">Bitters hashtag waistcoat fashion axe chia
+                    unicorn</h2>
+                  <p class="leading-relaxed">Glassier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+                    snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer...<span><a href="#allmenus"
+                        class="text-indigo-400 inline-flex items-center mt-4">&nbsp;Read More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a></span></p>
+
+                </div>
+              </div>
+              <div style="border-top: none; border-bottom: 1px solid rgba(31, 41, 55, 1);" class="blogPost py-8 flex border-gray-800 border-b-2 flex-wrap md:flex-nowrap md:flex-col">
+                <div class="md:w-full md:mb-4 mb-4 flex-shrink-0 flex">
+                  <span class="mt-1 text-gray-500 text-sm">12 Jun 2019&nbsp; |</span>
+                  <span class="mt-1 text-gray-400 text-sm">&nbsp;&nbsp;By Author &nbsp;|</span>
+                  <span class="font-medium title-font text-white">&nbsp;&nbsp;CATEGORY&nbsp; |</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-white title-font mb-2">Meditation bushwick direct trade taxidermy
+                    shaman</h2>
+                  <p class="post leading-relaxed">Glossier echi park pug, church-key sartorial biodiesel vexillologist pop-up
+                    snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer...<span><a href="#"
+                        class="text-indigo-400 inline-flex items-center mt-4">&nbsp;Read More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a></span></p>
+
+                </div>
+              </div>
+              <div style="border-top: none; border-bottom: 1px solid rgba(31, 41, 55, 1);" class="blogPost py-8 flex border-gray-800 border-b-2 flex-wrap md:flex-nowrap md:flex-col">
+                <div class="md:w-full md:mb-4 mb-4 flex-shrink-0 flex">
+                  <span class="mt-1 text-gray-500 text-sm">12 Jun 2019&nbsp; |</span>
+                  <span class="mt-1 text-gray-400 text-sm">&nbsp;&nbsp;By Author &nbsp;|</span>
+                  <span class="font-medium title-font text-white">&nbsp;&nbsp;CATEGORY&nbsp; |</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-white title-font mb-2">Woke master cleanse drinking vinegar
+                    salvia</h2>
+                  <p class="post leading-relaxed">Glossier echo park pugu, church-key sartorial biodiesel vexillologist pop-up
+                    snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer...<span><a href="#"
+                        class="text-indigo-400 inline-flex items-center mt-4">&nbsp;Read More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a></span></p>
+                </div>
+              </div>
+              <div style="border-top: none; border-bottom: 1px solid rgba(31, 41, 55, 1);" class="blogPost py-8 flex border-gray-800 border-b-2 flex-wrap md:flex-nowrap md:flex-col">
+                <div class="md:w-full md:mb-4 mb-4 flex-shrink-0 flex">
+                  <span class="mt-1 text-gray-500 text-sm">12 Jun 2019&nbsp; |</span>
+                  <span class="mt-1 text-gray-400 text-sm">&nbsp;&nbsp;By Author &nbsp;|</span>
+                  <span class="font-medium title-font text-white">&nbsp;&nbsp;CATEGORY&nbsp; |</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-white title-font mb-2">Woke master cleanse drinking vinegar
+                    salvia</h2>
+                  <p class="post leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+                    snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer...<span><a href="#"
+                        class="text-indigo-400 inline-flex items-center mt-4">&nbsp;Read More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a></span></p>
+                </div>
+              </div>
+              <div style="border-top: none; border-bottom: 1px solid rgba(31, 41, 55, 1);" class="blogPost py-8 flex border-gray-800 border-b-2 flex-wrap md:flex-nowrap md:flex-col">
+                <div class="md:w-full md:mb-4 mb-4 flex-shrink-0 flex">
+                  <span class="mt-1 text-gray-500 text-sm">12 Jun 2019&nbsp; |</span>
+                  <span class="mt-1 text-gray-400 text-sm">&nbsp;&nbsp;By Author &nbsp;|</span>
+                  <span class="font-medium title-font text-white">&nbsp;&nbsp;CATEGORY&nbsp; |</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-white title-font mb-2">Woke master cleanse drinking vinegar
+                    salvia</h2>
+                  <p class="post leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+                    snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer...<span><a href="#"
+                        class="text-indigo-400 inline-flex items-center mt-4">&nbsp;Read More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a></span></p>
+                </div>
+              </div>
+              <div style="border-top: none; border-bottom: 1px solid rgba(31, 41, 55, 1);" class="blogPost py-8 flex border-gray-800 border-b-2 flex-wrap md:flex-nowrap md:flex-col">
+                <div class="md:w-full md:mb-4 mb-4 flex-shrink-0 flex">
+                  <span class="mt-1 text-gray-500 text-sm">12 Jun 2019&nbsp; |</span>
+                  <span class="mt-1 text-gray-400 text-sm">&nbsp;&nbsp;By Author &nbsp;|</span>
+                  <span class="font-medium title-font text-white">&nbsp;&nbsp;CATEGORY&nbsp; |</span>
+                </div>
+                <div class="md:flex-grow">
+                  <h2 class="text-2xl font-medium text-white title-font mb-2">Woke master cleanse drinking vinegar
+                    salvia</h2>
+                  <p class="post leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up
+                    snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+                    lumbersexual pork belly polaroid hoodie portland craft beer...<span><a href="#"
+                        class="text-indigo-400 inline-flex items-center mt-4">&nbsp;Read More
+                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                          stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="subSection2" class="pb-16">
+        <!-- <div class="about">ABOUT</div> -->
+        <!-- <div class="bio flex justify-center items-center max-w-full ">
+              <div class="dpDiv">
+                <div class="dp relative"><img class="top-0 left-0 absolute w-full h-full" src="https://cdn.pixabay.com/photo/2014/11/21/00/09/man-539993__340.jpg" alt="Bio image"></div></div>
+              <div class="bioText"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eveniet qui earum temporibus sint suscipit, alias libero.</p></div>
+            </div> -->
+        <div class="search mb-12">
+          <div class="blogSearch" for="search">BLOG SEARCH</div>
+          <div id="searchInput" class="searchInput"><input type="text" placeholder="search"><i class="fas fa-search"></i>
+          </div>
+        </div>
+        <div class="featuredArticles max-w-full">
+          <div class="featureTlrContainer flex items-center justify-between mx-auto">
+            <div class="featureTitle w-3/5">Feature Links</div>
+            <div class="viewAll w-2/5 text-right"><a href="#" class="p-1 flex justify-end"><span>View all</span><i
+                  class="fas fa-arrow-circle-right p-1 grid place-items-center mx-1"></i></a></div>
+          </div>
+          <ul class="articlesDiv mx-auto">
+            <li class="articles flex items-center max-w-full ">
+              <div class="index ">01</div>
+              <div class="articleTitle grid "><a href="#" class="ml-2">Lorem ipsum dolor sit amet tetur icing
+                  elit.</a></div>
+            </li>
+          </ul>
+          <ul class="articlesDiv mx-auto">
+            <li class="articles flex items-center max-w-full ">
+              <div class="index ">02</div>
+              <div class="articleTitle grid "><a href="#" class="ml-2">Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ab odit a ullam?</a></div>
+            </li>
+          </ul>
+          <ul class="articlesDiv mx-auto">
+            <li class="articles flex items-center max-w-full ">
+              <div class="index ">03</div>
+              <div class="articleTitle grid "><a href="#" class="ml-2">Lorem ipsum dolor sit amet consectetur
+                  adipisicing.</a></div>
+            </li>
+          </ul>
+          <ul class="articlesDiv mx-auto">
+            <li class="articles flex items-center max-w-full ">
+              <div class="index ">04</div>
+              <div class="articleTitle grid "><a href="#" class="ml-2">Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Rem, et.</a></div>
+            </li>
+          </ul>
+        </div>
+        <div class="categories">
+          <h3>categories</h3>
+          <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Films</a></li>
+          </ul>
+        </div>
+        <div class="tagDiv">
+          <h2>Tags</h2>
+          <div class="allTags">
+            <div class="tags"><a href="www.facebook.com">Cinema</a></div>
+            <div class="tags"><a href="#">Travel</a></div>
+            <div class="tags"><a href="#">Architechture</a></div>
+            <div class="tags"><a href="#">Work</a></div>
+            <div class="tags"><a href="#">Sports</a></div>
+            <div class="tags"><a href="#">Housing</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer class="text-gray-400 bg-gray-900 body-font">
+    <div class="border-t border-gray-800">
+      <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+        <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+          <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+            <label for="footer-field" class="leading-7 text-sm text-gray-400">Sign Up</label>
+            <input type="text" id="footer-field" name="footer-field" placeholder="Email Address"
+              class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:ring-2 focus:ring-pink-900 focus:bg-transparent focus:border-pink-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <button
+            class="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded">Button</button>
+          <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 text-center sm:text-left">Bitters chicharrones fanny pack
+            <br class="lg:block hidden">waistcoat green juice
+          </p>
+        </div>
+        <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+          <a class="text-gray-400">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-400 text-sm text-center sm:text-left">© 2020 P.S Blogs —
+          <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank"
+            rel="noopener noreferrer">@prime</a>
+        </p>
+        <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-400 text-sm">Enamel pin
+          tousled raclette tacos irony</span>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./JS/functions.js" defer></script>
+</html>

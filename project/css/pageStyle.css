@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+main + main > hero {
+  min-height: 75vh;
+}
+main > nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 10vh;
+}
+header::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  width: 90%;
+  height: 0.7px;
+  margin: 0 auto;
+  background: rgb(53, 62, 87);
+}
+.searchIconDiv {
+  width: 18%;
+}
+.searchIconDiv > i {
+  width: 100%;
+  height: 100%;
+}
+.searchIconDiv > .fa-search {
+  display: grid;
+  place-items: center;
+}
+.searchIconDiv > .fa-times {
+  display: none;
+}
+.searchIconDiv > .searchCross {
+  display: grid;
+  place-items: center;
+}
+.searchIconDiv > .searchIcon {
+  display: none;
+}
+.navSearchDiv {
+  background: rgba(128, 128, 128, 0.212);
+}
+.navSearchIcon {
+  width: 82%;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  user-select: none;
+}
+.navSearchIcon:placeholder-shown,
+.navSearchIcon::placeholder {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: 1em;
+  word-spacing: 1ch;
+}
+#menuBtn > .fa-bars {
+  display: grid;
+  place-items: center;
+}
+#menuBtn > .openMenu {
+  display: none;
+}
+#menuBtn > .fa-times-circle {
+  display: none;
+}
+#menuBtn > .closeMenu {
+  display: grid;
+  place-items: center;
+}
+/* .allmenuDiv{
+  height: 30vh;
+} */
+#subSection1 {
+  width: 65%;
+}
+.blogPost {
+  border-top: none;
+  border-bottom: 1px solid rgba(31, 41, 55, 1);
+}
+#subSection2 {
+  width: 35%;
+}
+.card {
+  max-width: 100%;
+}
+.mainContainer {
+  /* border: 1px solid black; */
+  max-width: 90%;
+}
+.about {
+  height: max-content;
+  text-align: center;
+  font-weight: 900;
+  /* margin-bottom: 0.75em; */
+}
+.bio {
+  margin-bottom: 2em;
+  /* border: 1px solid red; */
+  height: 10em;
+}
+.dp {
+  width: 96px;
+  height: 96px;
+  padding: 0.75em;
+  text-align: center;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+.dp > image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.dpDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+}
+.bioText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em;
+  width: 70%;
+}
+.bioText > p {
+  font-size: clamp(0.75rem, 0.8rem + 0.2vw, 1.25rem);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.featureTlrContainer {
+  height: max-content;
+  max-width: 90%;
+  margin-bottom: 0.4em;
+}
+.featureTitle {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+.articlesDiv {
+  max-width: 90%;
+}
+.articles {
+  height: max-content;
+}
+.index {
+  width: 20%;
+  text-align: center;
+  font-size: 3.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+}
+.articleTitle {
+  width: 80%;
+}
+.articleTitle > h3 {
+  font-size: clamp(0.75rem, 0.8rem + 0.2vw, 1.25rem);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.search {
+  max-width: 100%;
+  overflow: hidden;
+}
+.blogSearch {
+  padding: 0.7em;
+  max-width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif, Geneva, Tahoma, sans-serif;
+}
+.searchInput {
+  padding: 0.5em;
+  height: min(2.7em, 4em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 85%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid orange;
+}
+.searchInput > input[type="text"] {
+  height: min(2.7em, 4em);
+  display: block;
+  width: 90%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background: transparent;
+}
+.fa-search {
+  text-align: center;
+  display: block;
+  width: 10%;
+}
+.categories {
+  max-width: 100%;
+  height: max-content;
+}
+.categories > h3 {
+  height: max-content;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 0.75em;
+}
+.categories > ul {
+  width: 90%;
+  margin: 0 auto;
+}
+.categories > ul > li {
+  line-height: 2em;
+  width: 100%;
+  font-size: 0.9rem;
+  list-style: disc;
+  margin-left: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.tagDiv {
+  max-width: 100%;
+}
+.tagDiv > h2 {
+  height: max-content;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 0.75em;
+}
+.allTags {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.tags {
+  width: 8rem;
+  text-align: center;
+  margin: 0.3em 0.3em;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+  border: 1px solid orange;
+}
+main {
+  min-height: 75vh;
+}
+header {
+  min-height: 75vh;
+}
+header > .container {
+  min-height: 75vh;
+  display: grid;
+}
+@media only screen and (max-width: 640px) {
+  #subSection2 {
+    width: 100%;
+    height: 20rem;
+    height: max-content;
+  }
+  #subSection1 {
+    /* margin-bottom: 2em; */
+    width: 100%;
+    min-height: 100%;
+  }
+  .mainContainer {
+    flex-direction: column;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
